@@ -5,7 +5,6 @@ public class Diamond {
         Scanner scanner = new Scanner(System.in); 
         System.out.print("Enter an integer: "); 
         int size = scanner.nextInt(); 
-
         int half = (size / 2) + 1;  
         int otherHalf = size - half;
      
@@ -14,7 +13,6 @@ public class Diamond {
                 for (int col = 1; col <= half - row; col++){
                     System.out.print(" ");
                 } 
- 
                 for (int col = 1; col <= row * 2 - 1; col++){
                     System.out.print("*");
                 } 
@@ -29,7 +27,8 @@ public class Diamond {
                     System.out.print("*");
                 } 
                 System.out.println();
-            }    
+            }
+
         }else { 
             for (int i = 1; i <= size + 1 ; i++) {
                 System.out.print(" ");  
@@ -40,34 +39,25 @@ public class Diamond {
                 for (int col = 1; col <= half - row; col++){
                     System.out.print("  ");  
                 } 
-
                 for (int col = 1; col <= row*2; col++){
-                    System.out.print("* "); 
-                
+                    System.out.print("* ");  
                 } 
-
                 System.out.println();
             } 
-        
             for (int row = otherHalf; row > 0; row--){
                 for (int col = 1; col <= half - row; col++){
                     System.out.print("  ");  
                 } 
-
                 for (int col = 1; col <= row*2; col++){
-                    System.out.print("* "); 
-                
+                    System.out.print("* ");                
                 } 
-
                 System.out.println(); 
             }     
-
             for (int i = 1; i <= size + 1 ; i++){
                  System.out.print(" "); 
             }
                  System.out.println("*");
         }
-
         scanner.close();
    }
 }
