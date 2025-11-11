@@ -9,7 +9,7 @@ public class Matrix {
     public void printMatrix() { 
         for (int row = 0; row < matrix.length; row++) { 
             for (int col = 0; col < matrix[row].length; col++) { 
-                if (row + col == matrix.length - 1){
+                if (row + col == matrix.length - 1) {
                     System.out.printf("\u001B[33m%8d\u001B[0m", matrix[row][col]);
                 }else { 
                     System.out.printf("%8d", matrix[row][col]);
