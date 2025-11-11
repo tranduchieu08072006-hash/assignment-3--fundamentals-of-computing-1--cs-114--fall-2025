@@ -17,7 +17,7 @@ public class Diamond {
 
      
         if (size % 2 != 0) { 
-            for (int row = 1; row <= half; row ++) { 
+            for (int row = 1; row <= half; row++) { 
                 for (int col = 1; col <= half - row; col++) {
                     System.out.print(" ");
                 } 
@@ -26,7 +26,7 @@ public class Diamond {
                 } 
                 System.out.println();
             }  
-            for (int row = otherHalf ; row > 0; row --) { 
+            for (int row = otherHalf ; row > 0; row--) { 
                 for (int col = 1; col <= half - row; col++) {
                     System.out.print(" ");
                 } 
