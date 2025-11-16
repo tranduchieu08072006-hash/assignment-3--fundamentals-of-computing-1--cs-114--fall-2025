@@ -28,10 +28,10 @@ public class Matrix {
         }
     } 
 
-    public void swap(int row1, int col1, int row2, int col2) { 
-        int tempValue = matrix[row1][col1]; // create a temporary variable to save the value 
-        matrix[row1][col1] = matrix[row2][col2]; 
-        matrix[row2][col2] = tempValue; // assign the value from the temporary variable 
+    public void swap(int x1, int y1, int x2, int y2) { 
+        int tempValue = matrix[x1][y1]; // create a temporary variable to save the value 
+        matrix[x1][y1] = matrix[x2][y2]; 
+        matrix[x2][y2] = tempValue; // assign the value from the temporary variable 
     } 
 
     public void flipMatrix() { 
